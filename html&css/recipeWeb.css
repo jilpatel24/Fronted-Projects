@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+.navContainer{
+    height:55px;
+    width: 100%;
+    background-color: blueviolet;
+    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+    position: fixed;
+}
+#navLogo{
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#navList{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+#elementDiv{
+    margin-top: 10px;
+    margin-right: 40px;
+    display: flex;
+    gap: 20px;
+}
+.contentBox{
+    margin-top: 20px;
+}
+.leftBox{
+    margin-left: 20px;
+}
+.rightBox{
+    height: 700px;
+    width:80%;
+}
+.item{
+    display: flex;
+}
+#img1,#img2,#img3,#img4{
+    height:500px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 70px;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: all 0.6s linear 0s;
+}
+
+#img1:hover{
+   transform: scale(0.9);
+}
+h2{
+    margin-top:40px;
+    font-size:35px;
+}
+h4{
+    margin-top: 10px;
+    font-size: 30px;
+}
+#ingredientsItem{
+   margin-top: 20px;
+   font-size: 25px;
+   list-style: none;
+}
+.recipeprocess{
+    font-size: 18px;
+    width: 800px;
+}
+#img2,#img3,#img4{
+margin-top: 150px;
+}
+#h1{
+    margin-top: 60px;
+}
+#h2,#h3,#h4{
+    margin-top: 70px;
+}
+.footerBox{
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+}
+#p1,#p2{
+    font-size: 30px;
+}
+
