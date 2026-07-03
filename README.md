@@ -1,2 +1,2 @@
 # Fronted-Projects
-fronted projects with html,css 
+fronted projects with html,css,js 
