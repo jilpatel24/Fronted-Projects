@@ -9,11 +9,11 @@
     .container{
       display: flex;
     }
-    .img_con{
+    img{
         height: 120px;
-        width: 200px;
-        background-image: url("img2.avif");
-        background-size: contain;
+        /* width: 200px; */
+        /* background-image: url("img2.avif");
+        background-size: contain; */
         border: 0.1px solid white;
         border-radius: 20px;
         margin-top: 200px;
@@ -21,9 +21,9 @@
     }
     #time{
         display:inline ;
-        position: relative;
-        left: 160px;
-        top: 100px;
+        position: absolute;
+        left: 190px;
+        top: 282px;
         color:white;
         background-color: black;
         border: 1px solid black;
@@ -46,6 +46,7 @@
 <body>
    <div class="container">
     <div class="img_con">
+    <img id="img" src="img2.avif" alt="" height="120px" width="200px">
     <h4 id="time">31:22</h4>
     </div>
     <div class="info">
@@ -53,7 +54,7 @@
         <h3 id="channel_name">Jil_patel_24 </h3>
         <h3 id="space"> ...</h3>
         <h3 id="views">  230k views</h3>
-        <h5 id="how_old">2 Months ago</h5>
+        <h5 id="how_old_vid">2 Months ago</h5>
     </div>
    </div>
 
