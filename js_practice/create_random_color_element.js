@@ -1,16 +1,19 @@
 js code
-let change = document.querySelectorAll(".container div");
-//for creating random color on element
-change.forEach((element,index) =>{
-    let random_color = "#"+ Math.floor(Math.random()*16777215).toString(16); //we use 16777215 bcz red,green,blue range = 0 to 155 so 256*256*256
-    // toSring(16) use for convert that value into hexadecimal
-    element.style.backgroundColor = random_color;
-});
-//using Array
-// change.forEach((element,index) =>{
-//     let random_color = ["purple","green","orange","blue"];
-//     element.style.backgroundColor = random_color;
-// });
+ let change_bgcolor ;
+    function randomColor(){
+        clearInterval();
+        
+        change_bgcolor = setInterval(()=>{
+           let random_color = "#"+ Math.floor(Math.random()*16777215).toString(16);
+          console.log("setInterval()");
+          document.body.style.backgroundColor = random_color;  
+        },1000);
+}
+function stop_color(){
+  console.log("clearInterval()");
+    clearInterval(change_bgcolor);
+}
+
 html code : 
 <!DOCTYPE html>
 <html lang="en">
