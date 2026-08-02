@@ -1,57 +1,68 @@
+//store all html id into js variable
 let scissor = document.getElementById("scissor");
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
-let choice = document.getElementById("choice");
-
-scissor.addEventListener("click",()=>{
-  choice.innerHTML="scissor";
-}) 
-rock.addEventListener("click",()=>{
-  choice.innerHTML="rock";
-})
-paper.addEventListener("click",()=>{
-  choice.innerHTML="paper";
-})
+let user_count = document.getElementById("user_score");
+let comp_count = document.getElementById("comp_score");//store html id
+let result = document.getElementById("result");
+let u_choice="";
 let user_score = 0;
-let comp_score = 0;
-//winning possibilities 
-//we store into list where value store in key:value pair  
-const beats = {
-    rock : "scissor",
-    paper : "rock",
-    scissor : "paper" 
-  };
-//generate computer
-let random_choice = ()=>{
-  const option = ["rock","paper","scissor"
-  ]
- return Math.floor(Math.random()*3);
+let comp_score = 0; 
+
+
+//store user choice 
+function getUser_choice(userChoice){
+   u_choice = userChoice;
+   console.log("user choice : ",u_choice);
+}
+scissor.addEventListener("click",()=>{
+  getUser_choice("scissor");
+  random_choice();          //u_choice store user choice
+  play(u_choice,compChoice)//compChoice store generated computer choice
+
+});
+
+rock.addEventListener("click",()=>{
+  getUser_choice("rock");
+random_choice();
+play(u_choice,compChoice)
+
+});
+
+paper.addEventListener("click",()=>{
+  getUser_choice("paper");
+  random_choice();
+  play(u_choice,compChoice)
  
+});
 
+
+//generate computer choice
+function random_choice(){
+let choice = ["scissor","rock","paper"];
+  let computer_choice = Math.floor(Math.random(choice)*3);
+  compChoice = choice[computer_choice];
+  console.log("comp choice :",compChoice);
+  return compChoice;
 }
-//actual game logic
-const play = (user_choice)=>{
-  console.log("User choice :",user_choice);
+//compare both
 
-  let comp_choice = random_choice();
-   console.log("computer choice :",comp_choice);
+function play(user_Choice,comp_Choice){
 
-  if(user_choice === comp_choice){
-    console.log("It's tie!..");
+  if(user_Choice === comp_Choice){
+    console.log("It's draw");
+    result.innerHTML="It's draw";
   }
-
-  if(beats[user_choice] === comp_choice){
-    console.log("You are win..");
+  //winning possibility
+  else if(user_Choice == "scissor" && comp_Choice == "paper" || user_Choice == "rock" && comp_Choice == "scissor" || user_Choice == "paper" && comp_Choice == "rock"){
     user_score++;
+    console.log("User is win");
+    result.innerHTML="You win";
   }else{
-    console.log("computer is win");
-    comp_score++;
+     comp_score++;
+    console.log("Comp is win");
+     result.innerHTML="comp win";
   }
-  
+  user_count.innerHTML = user_score;
+  comp_count.innerHTML = comp_score;
 }
- const option = ["rock","paper","scissor"]
- for(let i = 0;i<5;i++){
-  const userChoice = option[Math.floor(Math.random()*3)];
-  play(userChoice);
- }
-  
