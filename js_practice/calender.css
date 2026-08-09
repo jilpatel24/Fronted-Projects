@@ -2,6 +2,11 @@
     width: 280px;
     padding : 15px;
 }
+.cel_header{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
 .calender_header{
     display: flex;
     justify-content:space-between;
