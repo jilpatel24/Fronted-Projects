@@ -1,5 +1,8 @@
 const dates = document.getElementById("dates");
-const print_month = document.getElementById("monthName")
+const print_month = document.getElementById("monthName");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
 let date = new Date();//new Date() return today's date
 
 //all months start with 0 = january and 11 = december
@@ -36,4 +39,13 @@ function createCalendar(){ //display calender dates
    
 }
 createCalendar();
-
+//previous month logic
+prev.addEventListener("click",function(){
+   date.setMonth(date.getMonth()-1);
+   createCalendar();
+})
+//next month logic
+next.addEventListener("click",function(){
+   date.setMonth(date.getMonth()+1);
+   createCalendar();
+})
