@@ -1,0 +1,36 @@
+.calender{
+    width: 280px;
+    padding : 15px;
+}
+.calender_header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.calender_header button{
+    border: none;
+    cursor: pointer;
+    font-size: 18p;
+}
+.weekdays,.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+}
+.weekdays{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    gap:20px ;
+}
+.dates{
+    margin-top: 10px;
+    gap: 29px;
+    width: 156px;
+    height: 100px;
+    margin-left: 8px;
+}
+.monthName{
+    font-size: 30px;
+}
