@@ -1,0 +1,13 @@
+#heading2{
+    font-size: 28px;
+    margin-top: 20px;
+}
+li{
+    margin-left: 47px;
+    margin-top: 10px;
+    font-size:18px ;
+}
+li:hover{
+    text-decoration: underline;
+    color: blue;
+}
