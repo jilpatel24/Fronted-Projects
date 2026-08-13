@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+}
+.schedule label{
+    display: block;
+}
+.schedule{
+    margin-top: 160px;
+    margin-left: 20px;
+}
+.category h3{
+   margin-left: 20px;
+}
+header{
+   margin-left: 80px;
+   margin-top: 20px; 
+}
+.search_box{
+    position: relative;
+}
+.top_bar{
+    display: flex;
+}
+input[type="text"]{
+    width: 250px;
+    height: 30px;
+    border:0.1px solid black;
+    border-radius: 20px;
+}
+.search_box input{
+    padding-left: 10px;
+}
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+.button{
+    margin-left: 250px;
+    width: 150px;
+}
+.notification{
+  margin-left: 20px;
+}
+.notification i{
+    font-size: 20px;
+    color: blue;
+   
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+}
