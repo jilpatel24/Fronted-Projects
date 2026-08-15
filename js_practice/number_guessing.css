@@ -1,0 +1,63 @@
+ body{
+    background-color: rgb(56, 101, 128);
+    color: white;
+    font-family:  sans-serif;
+}
+h1{
+    font-size:45px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(70, 56, 52);
+}
+#first{
+    
+    font-size: 30px;
+    color: rgb(8, 81, 8);
+    font-weight: bolder;
+}
+#second{
+    
+    font-size: 30px;
+    color: rgb(70, 56, 52);
+    font-weight: bolder;
+ }
+#guess{
+    font-size: 30px;
+    text-align: center;
+}
+#guessFeild{
+    height: 50px;
+    width: 180px;
+    border-radius:20px ;
+    background-color: rgb(70, 56, 52);
+    color: white;
+    font-size: 25px;
+}
+#guess{
+    margin-left: 420px;
+    font-size: 37px;
+    color: rgb(8, 81, 8);
+    font-weight: bolder;
+}
+#subt{
+    margin-left: 590px;
+    margin-top: 20px;
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #15348b;
+    color: rgb(53, 30, 30);
+    font-size: 26px;
+    font-weight: bolder;
+}
+#res1{
+    font-size: 30px;
+    color: rgb(8, 81, 8);
+    font-weight: bolder;
+    margin-top: 30px;
+}
+#res2{
+    font-size: 30px;
+    color: rgb(70, 56, 52);
+    font-weight: bolder;
+} 
