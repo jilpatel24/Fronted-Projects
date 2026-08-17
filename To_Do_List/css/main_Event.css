@@ -3,3 +3,26 @@
     margin-top: 20px;
     font-size: 25px;
 }
+#my_cal,#world_cal,#ai{
+      background-color:whitesmoke;
+    border: 1px solid rgb(59, 97, 222);
+    border-radius: 15px;
+    height: 35px;
+    width: 160px ;
+    font-size: 15px;
+    color: rgb(59, 97, 222);
+   margin-top: 20px;
+   margin-left: 20px;
+}
+.stats{
+    display: flex;
+    /* gap: 10px; */
+}
+.card{
+    height: 120px;
+    width: 270px;
+    border: 0.1px solid black;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
